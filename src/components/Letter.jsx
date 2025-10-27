@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import {AppContext} from "../App"
 const Letter = ({ letterPos, attemptVal }) => {
   const { board, correctWord, currAttempt } = useContext(AppContext);
-  const letter = board[attemptVal][letterPos];
+  const letter = board[attemptVal][letterPos]?.toLowerCase();
   const correct = correctWord[letterPos] === letter;
   const almostCorrect = !correct && letter !== "" && correctWord.includes(letter);
   let bgColor = "bg-transparent border-gray-300 text-white"; // default color
