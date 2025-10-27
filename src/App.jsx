@@ -41,7 +41,7 @@ const App = () => {
     }
     if(guess === correctWord){
       setGameOver({over:true, guessWord:true})
-      alert(`You guessed it! 🎉 The word was ${correctWord}`);
+      // alert(`You guessed it! 🎉 The word was ${correctWord}`);
       return;
     }
     if(currAttempt.attempt === 5){
@@ -58,9 +58,6 @@ const App = () => {
       setBoard(newBoard);
       setCurrAttempt({...currAttempt, letterPos: currAttempt.letterPos - 1})
   }
-
-
-
 
 
   return (

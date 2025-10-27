@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import {AppContext} from "../App"
 const Letter = ({ letterPos, attemptVal }) => {
-  const { board, correctWord, currAttempt } = useContext(AppContext);
+  const { board, correctWord, currAttempt, gameover } = useContext(AppContext);
   const letter = board[attemptVal][letterPos]?.toLowerCase();
   const correct = correctWord[letterPos] === letter;
   const almostCorrect = !correct && letter !== "" && correctWord.includes(letter);
   let bgColor = "bg-transparent border-gray-300 text-white"; // default color
 
-if (currAttempt.attempt > attemptVal) {
+if (currAttempt.attempt > attemptVal || (gameover.over && attemptVal === currAttempt.attempt)) {
   if (correct) {
     bgColor = "bg-green-500 border-green-600 text-white";
   } else if (almostCorrect) {
