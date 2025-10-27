@@ -46,7 +46,7 @@ const App = () => {
     }
     if(currAttempt.attempt === 5){
       setGameOver({over:true, guessWord:false});
-      alert(`Game Over! 😢 The word was ${correctWord}`);
+      // alert(`Game Over! 😢 The word was ${correctWord}`);
       return;
     }
     setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos : 0})
@@ -67,12 +67,11 @@ const App = () => {
           <h2 className="tracking-wide text-2xl">Wordle</h2>
         </div>
       </nav>
+
       <AppContext.Provider value={{ board, setBoard, currAttempt, setCurrAttempt, whenDelete, whenEnter, whenSelectLetter, correctWord, setGameOver, gameover }}>
-        <div className="flex-1 flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-start pt-16 gap-10">
           <Board />
-        </div>
-        <div className="mt-10">
-          {gameover.over ? <PlayAgain />:<Keyboard />}
+          {gameover.over ? <PlayAgain /> : <Keyboard />}
         </div>
       </AppContext.Provider>
     </div>
