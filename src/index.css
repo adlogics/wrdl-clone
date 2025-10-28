@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
 @import "tailwindcss";
 
-
-*{
-    margin: 0;
-    padding: 0;
-}
-html,body{
+:root{
     background-color: #121213;
     color:#F8F8F8;
     font-family: "BBH Sans Bogle", sans-serif;

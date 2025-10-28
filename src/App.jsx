@@ -25,7 +25,7 @@ const App = () => {
   // if (gameover.over) return;
 
   const whenSelectLetter = (keyVal)=>{
-    if(currAttempt.letterPos > 4) return
+    if(currAttempt.letterPos > 3) return
     const newBoard = [...board];
     newBoard[currAttempt.attempt][currAttempt.letterPos] = keyVal;
     setBoard(newBoard);
@@ -33,7 +33,7 @@ const App = () => {
   }
 
   const whenEnter = ()=>{
-    if(currAttempt.letterPos !== 5) return
+    if(currAttempt.letterPos !== 4) return
     const guess = board[currAttempt.attempt].join("").toLowerCase()
     if(!validWords.has(guess)){
       alert('Not a Valid Word!');
@@ -44,7 +44,7 @@ const App = () => {
       // alert(`You guessed it! 🎉 The word was ${correctWord}`);
       return;
     }
-    if(currAttempt.attempt === 5){
+    if(currAttempt.attempt === 4){
       setGameOver({over:true, guessWord:false});
       // alert(`Game Over! 😢 The word was ${correctWord}`);
       return;
@@ -61,20 +61,20 @@ const App = () => {
 
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#121212] text-white">
-      <nav className="w-full h-12 bg-[#121213] flex items-center border-b-[1px] border-[#2A2A2B]">
+    <>
+      <nav className="container py-2 mx-auto bg-[#121213] flex justify-center items-center border-b-[1px] border-[#2A2A2B]">
         <div className="w-full flex justify-center">
-          <h2 className="tracking-wide text-2xl">Wordle</h2>
+          <h2 className="tracking-widest text-2xl">Wrdl</h2>
         </div>
       </nav>
 
       <AppContext.Provider value={{ board, setBoard, currAttempt, setCurrAttempt, whenDelete, whenEnter, whenSelectLetter, correctWord, setGameOver, gameover }}>
-        <div className="flex flex-col items-center justify-start pt-16 gap-10">
+        <div className="container mx-auto flex-1 flex flex-col items-center justify-start pt-4 gap-6">
           <Board />
           {gameover.over ? <PlayAgain /> : <Keyboard />}
         </div>
       </AppContext.Provider>
-    </div>
+    </>
   );
 };
 

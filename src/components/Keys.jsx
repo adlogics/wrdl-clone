@@ -15,7 +15,7 @@ function Keys({keyVal, w}) {
     }
   }
   return (
-    <div className='h-[70px] rounded-sm grid place-items-center bg-[#818384]'style={{ width: w ? `${w * 10}px` : '50px' }} onClick={selectLetter}>{keyVal}</div>
+    <div className='h-[70px] rounded-sm grid place-items-center bg-[#555555]'style={{ width: w ? `${w * 10}px` : '50px' }} onClick={selectLetter}>{keyVal}</div>
   )
 }
 
