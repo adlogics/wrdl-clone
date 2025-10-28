@@ -19,7 +19,7 @@ const App = () => {
   useEffect(()=>{
     const randomIndex = Math.floor(Math.random()*potentialWords.length)
     setCorrectWord(potentialWords[randomIndex])
-    console.log("✅ Correct word is:", potentialWords[randomIndex]);
+    // console.log("✅ Correct word is:", potentialWords[randomIndex]);
   },[])
 
   // if (gameover.over) return;
@@ -64,7 +64,7 @@ const App = () => {
     <>
       <nav className="container py-2 mx-auto bg-[#121213] flex justify-center items-center border-b-[1px] border-[#2A2A2B]">
         <div className="w-full flex justify-center">
-          <h2 className="tracking-widest text-2xl">Wrdl</h2>
+          <h2 className="tracking-wider text-2xl">Wrdl</h2>
         </div>
       </nav>
 

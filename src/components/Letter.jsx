@@ -17,7 +17,7 @@ if (currAttempt.attempt > attemptVal || (gameover.over && attemptVal === currAtt
   }
 }
   return (
-    <div className={`flex-[33%] grid place-items-center border ${bgColor}`}>{letter}</div>
+    <div className={`flex-[33%] grid place-items-center border m-1 ${bgColor}`}>{letter}</div>
   );
 };
 
