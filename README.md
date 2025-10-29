@@ -1,16 +1,18 @@
-# React + Vite
+# 🔠 wrdl - four letter word guessing game
+A fun and minimalist **Wordle-style word guessing game** built with **React** and **Tailwind CSS** but with a twist: you only guess **four-letter words**!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Features
+- 🎮 Classic Wordle gameplay — guess the secret 4-letter word!
+- 📱 Responsive design – works great on both desktop and mobile.
+- ⌨️ Keyboard support (type letters or use on-screen keys).
+- Real-time color feedback:
+  - 🟩 Green – correct letter in the right spot  
+  - 🟨 Yellow – letter exists but in a different position  
+  - ⬜ Gray – letter not in the word
+- 💡Simple, lightweight, and easy to customize.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Tech Stack
+-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="14" height="12"/> **React.js** – Frontend framework
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="14" height="12"/> **Tailwind CSS** – Styling
+- 🧠 **Context API** – Game state management
+          
