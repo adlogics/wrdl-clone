@@ -2,7 +2,7 @@ import Letter from './Letter'
 
 const Board = () => {
   return (
-        <div className='w-[400px] h-[400px] flex flex-col border-transparent'>
+        <div className='sm:w-[400px] sm:h-[400px] w-[200px] h-[200px] flex flex-col border-transparent'>
           <div className='flex-[33%] flex mx-1' >
             <Letter letterPos = {0} attemptVal = {0}/>
             <Letter letterPos = {1} attemptVal = {0}/>

@@ -49,24 +49,27 @@ const Keyboard = () => {
 
 
   return (
-    <div className="flex flex-col items-center gap-1">
+    <div className="flex flex-col items-center gap-1
+        w-full max-w-lg mx-auto
+        px-1 sm:px-3 md:px-6
+        mt-4">
 
       {/* Row 1 */}
-      <div className="flex justify-center gap-1 ">
+      <div className="flex justify-center gap-1 w-full">
         {key1.map((key) => (
           <Keys keyVal={key} />
         ))}
       </div>
 
       {/* Row 2 */}
-      <div className="flex justify-center gap-1 ">
+      <div className="flex justify-center gap-1 w-full">
         {key2.map((key) => (
           <Keys keyVal={key} />
         ))}
       </div>
 
       {/* Row 3 */}
-      <div className="flex justify-center gap-1 ">
+      <div className="flex justify-center gap-1 w-full">
         <Keys keyVal={"ENTER"} w={9}/>
         {key3.map((key) => (
           <Keys keyVal={key} />

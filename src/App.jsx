@@ -69,7 +69,7 @@ const App = () => {
       </nav>
 
       <AppContext.Provider value={{ board, setBoard, currAttempt, setCurrAttempt, whenDelete, whenEnter, whenSelectLetter, correctWord, setGameOver, gameover }}>
-        <div className="container mx-auto flex-1 flex flex-col items-center justify-start pt-4 gap-6">
+        <div className="container mx-auto flex-1 flex flex-col items-center justify-start pt-6 gap-4">
           <Board />
           {gameover.over ? <PlayAgain /> : <Keyboard />}
         </div>
