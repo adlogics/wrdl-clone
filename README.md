@@ -16,3 +16,8 @@ A fun and minimalist **Wordle-style word guessing game** built with **React** an
 - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="14" height="12"/> **Tailwind CSS** – Styling
 - 🧠 **Context API** – Game state management
           
+## 📸 Preview
+game-start
+<img width="1919" height="910" alt="game-start" src="https://github.com/user-attachments/assets/f9e1b8eb-6b8b-4811-b406-db1f18795358" />
+game-over
+<img width="1919" height="903" alt="Game Over" src="https://github.com/user-attachments/assets/eaf10946-f6f7-4b9e-a505-6c5e5820a35c" />
